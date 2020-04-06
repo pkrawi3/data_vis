@@ -7,6 +7,7 @@ I plan to make a visually based software using python from which the user can ea
 ## Abstract
 ### Project Purpose
 To provide a very quick way to get some data exploration done without having to work around software made for more functionality, giving the user the options of changing different attributes of the visualization using a click based approach.
+Extensive ability to control using clicking as much as possible in order to maximise accessibility. More in Features section.
 
 ### Project Motivation
 At work I do a lot of statistical analysis using python and often I find myself writing repeat code for pretty trivial stuff, especially when doing data exploration.
