@@ -20,9 +20,13 @@ At work I do a lot of statistical analysis using python and often I find myself 
 
 ## Functional Specification
 ### Features
-- GUI with all click based controls
+- GUI with all click based controls: Should populate columns to choose from in drag and drop 
+- Ability to rename title/axes
 - Various data visualizations
 - Various data modelling
+- The click based contorls should extend to things such as changing the colors of various parts of the plotting using drag and drop or scrolling in the GUI
+- The user should also be able to choose to download by format through drag and drop, specifying file formats for downloading
+
 
 ### Scope of the project
 - Limitations include formatting of data being input
