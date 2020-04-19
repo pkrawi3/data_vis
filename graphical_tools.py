@@ -5,6 +5,7 @@ Library housing functions and perhaps classes for modelling and plotting to be u
 # Imports
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 
 # Global Table
 main_table = pd.DataFrame()
