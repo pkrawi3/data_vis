@@ -54,8 +54,8 @@ At work I do a lot of statistical analysis using python and often I find myself 
 |  2D Scatter Plot |  5  |  0: Didn't implement anything <br> 4: implemented but aesthetically defecit <br> 5: completed  |
 |  Box Plots of Various Columns |  5  |  0: Didn't implement anything <br> 4: implemented with minor issues <br> 5: completed  |
 |  3D Scatter Plot |  5  |  0: Didn't implement anything <br> 3: implemented but with issues <br> 5: completed function c |
-|  Unit Test |  6  |  0: Didn't implement tests <br> 1: implemented 3 <br> 3: implemented6 |
-|  Manual Test Plan |  4  |  0: Didn't implement tests <br> 1: implemented 2 <br> 3: implemented 3 |
+|  Unit Test |  6  |  0: Didn't implement tests <br> 4: implemented 3 <br> 6: implemented6 |
+|  Manual Test Plan |  4  |  0: Didn't implement tests <br> 2: implemented 2 <br> 4: implemented 3 |
 
 
 ### Week 3
