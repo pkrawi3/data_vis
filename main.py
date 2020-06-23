@@ -77,6 +77,7 @@ def init_options_menu():
     k_label_menu = Entry(option_container, textvar=kvar, width=2)
     k_label_menu.pack(side=LEFT, expand=True, fill="both")
 
+
 """
 Container for importing the dataset
 """
@@ -115,8 +116,6 @@ quit_button = Button(master=table_container, text="Quit", command=_quit, bg=sand
 quit_button.pack(expand=True, fill='both')
 
 
-
-
 """
 Container for painting the plot
 """
@@ -137,7 +136,6 @@ def on_key_press(event):
 canvas.mpl_connect("key_press_event", on_key_press)
 
 canvas.get_tk_widget().pack(side=TOP, fill=BOTH, expand=1)
-
 
 
 """

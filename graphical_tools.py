@@ -113,39 +113,43 @@ def create_3dscatter(xvar, yvar, zvar):
 
     return new_figure
 
-
-
 """
 Generates linear regression model, plots line over scatter plot
 """
 def create_linear(xvar, yvar):
     
-    x_col = main_table[xvar]
-    if(x_col.empty == True):
+    try:
+        x_col = main_table[xvar]
+    except:
         print("Table has no valid x column")
-    y_col = main_table[yvar]
-    if(y_col.empty == True):
+    try:
+        y_col = main_table[yvar]
+    except:
         print("Table has no valid y column")
     try:
         plt.scatter(x_col, y_col)
         r = linregress(x_col, y_col) 
         new_figure = plt.plot(x_col, r.slope*x_col + r.intercept, c="red")
+        error = ""
     except Exception as error_text:
         new_figure = plt.figure()
+        error = error_text
         print(error_text)
 
-    return new_figure
+    return new_figure, error
 
 """
 Generates K-Means clusters, colors in by cluster
 """
 def create_kmeans(xvar, yvar, k):
 
-    x_col = main_table[xvar]
-    if(x_col.empty == True):
+    try:
+        x_col = main_table[xvar]
+    except:
         print("Table has no valid x column")
-    y_col = main_table[yvar]
-    if(y_col.empty == True):
+    try:
+        y_col = main_table[yvar]
+    except:
         print("Table has no valid y column")
     try:
         X = np.vstack((x_col, y_col)).T
@@ -153,9 +157,11 @@ def create_kmeans(xvar, yvar, k):
         kmeans.fit(X)
         clusters = kmeans.predict(X)
         new_figure = plt.scatter(x_col, y_col, c=clusters)
+        error = ""
     except Exception as error_text:
         new_figure = plt.figure()
+        error = error_text
         print(error_text)
 
-    return new_figure
+    return new_figure, error
 

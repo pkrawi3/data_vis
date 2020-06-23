@@ -38,5 +38,13 @@ class TestStringMethods(unittest.TestCase):
         self.assertFalse(pd.DataFrame(np.array([[1,2,3],[4,5,6]]), columns=['a','b','c'], dtype='int64').equals(table))
         self.assertEqual(error, 1)
 
+    """
+    Tests the creation of Scatter Plot of test file 1
+    """
+    def test_scatter_one(self):
+        tools.main_table, error = tools.read_table('tests/unit_1.csv')
+        current_figure = tools.create_scatter()
+
+
 if __name__ == '__main__':
     unittest.main()
